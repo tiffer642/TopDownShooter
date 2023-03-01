@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 1457347957707975244}
   - component: {fileID: 1457347957707975245}
   - component: {fileID: 1457347957707975243}
-  - component: {fileID: 1457347957707975242}
   m_Layer: 0
   m_Name: Player Sprite
   m_TagString: Untagged
@@ -125,27 +124,6 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
---- !u!50 &1457347957707975242
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1457347957707975246}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &2055348992469034600
 GameObject:
   m_ObjectHideFlags: 0
@@ -156,6 +134,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6974917235627040630}
   - component: {fileID: 3728623922092129843}
+  - component: {fileID: 3427477639414128608}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -193,6 +172,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+--- !u!50 &3427477639414128608
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055348992469034600}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &5928376381859796280
 GameObject:
   m_ObjectHideFlags: 0

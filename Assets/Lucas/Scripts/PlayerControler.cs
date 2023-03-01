@@ -44,6 +44,7 @@ public class PlayerControler : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy"))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            Debug.Log("Dead");
         }
     }
 
