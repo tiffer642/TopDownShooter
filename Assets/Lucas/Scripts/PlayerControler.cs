@@ -11,6 +11,9 @@ public class PlayerControler : MonoBehaviour
     public float moveSpeed = 5;
 
 
+    //Health
+    public float HP = 100;
+
 
     // Start is called before the first frame update
     void Start()
@@ -43,9 +46,19 @@ public class PlayerControler : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            Debug.Log("Dead");
+            Hit(100); //Change to collision.gameObject.GetComponent<  -EnemyAI Script-  >().DMG;
         }
+    }
+
+
+    public void Hit(float Dmg) //Dmg Damage an enemy does.
+    {
+            HP -= 100;  //Change to the damage of the enemy;
+            if(HP <= 0)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                Debug.Log("Dead");
+            }
     }
 
 }
