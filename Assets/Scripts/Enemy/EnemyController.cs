@@ -5,6 +5,9 @@ using System;
 
 public class EnemyController : MonoBehaviour
 {
+    public static event Action<EnemyController> OnEnemyKilled;
+    [SerializeField] float health, maxHealth = 3f;
+
     [SerializeField] float moveSpeed = 5f;
     Rigidbody2D rb;
     Transform target;
@@ -34,6 +37,19 @@ public class EnemyController : MonoBehaviour
         if(target)
         {
             rb.velocity = new Vector2(moveDirection.x, moveDirection.y) * moveSpeed;
+        }
+    }
+
+    public void TakeDamage(float damageAmount)
+    {
+        Debug.Log($"Damage Amount: {damageAmount}");
+        health -= damageAmount;
+        Debug.Log($"Health is now: {health}");
+
+        if(health <= 0)
+        {
+            Destroy(gameObject);
+            OnEnemyKilled?.Invoke(this);
         }
     }
 }
