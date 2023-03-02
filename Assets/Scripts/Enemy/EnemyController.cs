@@ -18,6 +18,7 @@ public class EnemyController : MonoBehaviour
     {
         target = GameObject.Find("Player").transform;
         rb = GetComponent<Rigidbody2D>();
+        health = maxHealth;
     }
 
     // Update is called once per frame
