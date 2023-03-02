@@ -18,7 +18,7 @@ public class PlayerControler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -53,12 +53,13 @@ public class PlayerControler : MonoBehaviour
 
     public void Hit(float Dmg) //Dmg Damage an enemy does.
     {
-            HP -= 100;  //Change to the damage of the enemy;
-            if(HP <= 0)
-            {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-                Debug.Log("Dead");
-            }
+        HP -= 100;  //Change to the damage of the enemy;
+        if (HP <= 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            Debug.Log("Dead");
+        }
     }
+
 
 }

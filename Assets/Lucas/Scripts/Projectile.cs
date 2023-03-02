@@ -21,4 +21,5 @@ public class Projectile : MonoBehaviour
     {
         RB.AddForce(Vector2.up * Speed, ForceMode2D.Impulse);
     }
+
 }
