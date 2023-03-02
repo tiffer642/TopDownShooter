@@ -17,6 +17,7 @@ public class EnemyController : MonoBehaviour
     void Start()
     {
         target = GameObject.Find("Player").transform;
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
