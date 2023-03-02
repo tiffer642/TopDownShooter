@@ -520,7 +520,6 @@ GameObject:
   m_Component:
   - component: {fileID: 813088764}
   - component: {fileID: 813088763}
-  - component: {fileID: 813088762}
   - component: {fileID: 813088761}
   - component: {fileID: 813088760}
   m_Layer: 0
@@ -567,21 +566,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.8
---- !u!114 &813088762
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 813088759}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dddeaa561a5150f45ad44d792c4b3da4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 0
-  maxHealth: 3
-  moveSpeed: 5
 --- !u!212 &813088763
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -631,7 +615,7 @@ SpriteRenderer:
   m_Size: {x: 1.6, y: 1.6}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &813088764
