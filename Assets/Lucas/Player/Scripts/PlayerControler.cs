@@ -15,6 +15,10 @@ public class PlayerControler : MonoBehaviour
     public float HP = 100;
 
 
+    //coins
+    public float coins = 0;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -46,7 +50,8 @@ public class PlayerControler : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            Hit(100); //Change to collision.gameObject.GetComponent<  -EnemyAI Script-  >().DMG;
+            
+            Hit(collision.gameObject.GetComponent<EnemyController>().dmg);
         }
     }
 
