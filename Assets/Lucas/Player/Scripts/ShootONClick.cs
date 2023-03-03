@@ -31,7 +31,7 @@ public class ShootONClick : MonoBehaviour
 
     public void FireProjectile()
     {
-        var I = Instantiate(Projectile, SpawnPos.position, transform.rotation);
+        var I = Instantiate(Projectile, SpawnPos.position, SpawnPos.rotation);
         StartCoroutine(ReChamber());
     }
 

@@ -49,6 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   HP: 100
+  coins: 0
 --- !u!50 &3703101847720957860
 Rigidbody2D:
   serializedVersion: 4
@@ -147,7 +148,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 763173639f55fae4f9e32173ab36df39, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f654185405698274991049c04f4e358b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -187,11 +188,23 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0.06
   m_Points:
-  - {x: -0.24223489, y: 0.22826782}
-  - {x: 0.19300807, y: -0.0048838556}
-  - {x: -0.23519641, y: -0.22183773}
-  - {x: -0.070354894, y: -0.0064300895}
-  - {x: -0.24394593, y: 0.23359105}
+  - {x: -0.19687712, y: 1.4176494}
+  - {x: 0.25241, y: 1.3848562}
+  - {x: 0.29384217, y: 0.49476185}
+  - {x: 0.5500351, y: 0.30165038}
+  - {x: 0.91781044, y: 0.25653005}
+  - {x: 1.0699252, y: -0.075440384}
+  - {x: 0.9446692, y: -0.3504275}
+  - {x: 0.67726016, y: -0.5688298}
+  - {x: 0.41493165, y: -0.665336}
+  - {x: -0.779526, y: -0.6849443}
+  - {x: -0.9825502, y: -0.44488853}
+  - {x: -0.9950015, y: 0.17816801}
+  - {x: -0.8688503, y: 0.36375162}
+  - {x: -0.6063876, y: 0.3752595}
+  - {x: -0.6074994, y: 0.80361336}
+  - {x: -0.68789816, y: 1.2673843}
+  - {x: -0.19354841, y: 1.4128932}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -332,7 +345,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7881833776555484183}
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.691, y: 0, z: 0}
+  m_LocalPosition: {x: 1.661, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
