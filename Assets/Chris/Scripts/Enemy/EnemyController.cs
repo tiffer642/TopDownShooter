@@ -5,7 +5,7 @@ using System;
 
 public class EnemyController : MonoBehaviour
 {
-    public float dmg = 100f;
+    public float dmg = 100f; 
 
     public static event Action<EnemyController> OnEnemyKilled;
     [SerializeField] float health, maxHealth = 3f;
