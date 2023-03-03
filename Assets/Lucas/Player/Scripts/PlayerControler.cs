@@ -49,7 +49,8 @@ public class PlayerControler : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            Hit(100); //Change to collision.gameObject.GetComponent<  -EnemyAI Script-  >().DMG;
+            
+            Hit(collision.gameObject.GetComponent<EnemyController>().dmg);
         }
     }
 

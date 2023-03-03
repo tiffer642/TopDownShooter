@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-   
+    //Damage
+    public float Dmg = 1;
 
     //Speed
     public float Speed = 1;
@@ -31,5 +32,16 @@ public class Projectile : MonoBehaviour
         yield return new WaitForSeconds(5);
         Destroy(gameObject);
     }
+
+    //oncollision with enemy hurt enemy
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            collision.gameObject.GetComponent<EnemyController>().TakeDamage(Dmg);
+        }
+    }
+
+
 
 }
